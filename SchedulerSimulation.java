@@ -40,7 +40,7 @@ class Process implements Runnable {
         this.timeQuantum = timeQuantum;
         this.remainingTime = burstTime; // Initially, remaining time is equal to the burst time
     }
-
+ 
     public long getStartTimeMillis() {
         return startTimeMillis;
     }
