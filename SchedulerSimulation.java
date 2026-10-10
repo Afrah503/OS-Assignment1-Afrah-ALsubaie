@@ -77,7 +77,7 @@ class Process implements Runnable {
         } catch (InterruptedException e) {
             System.out.println(Colors.RED + "\n  ✗ " + name + " was interrupted." + Colors.RESET);
         }
-
+ 
         remainingTime -= runTime; // Deduct the run time from the remaining time
         int overallProgress = (int) (((double) (burstTime - remainingTime) / burstTime) * 100);
         String overallProgressBar = createProgressBar(overallProgress, 20);
